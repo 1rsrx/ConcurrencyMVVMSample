@@ -18,6 +18,8 @@ class SearchRepositoryViewController: UIViewController {
     private var cancellables: [AnyCancellable] = []
     private let repositoryTableViewCellIdentifier = "RepositoryTableViewCell"
 
+    private var repositories = [Repository]()
+
     override func loadView() {
         let view = UINib(nibName: "SearchRepositoryView", bundle: nil)
             .instantiate(withOwner: self).first! as! UIView
@@ -27,7 +29,7 @@ class SearchRepositoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        viewModel = SearchRepositoryViewModel()
+        viewModel = SearchRepositoryViewModel(model: SearchRepositoryModel())
         setupView()
         bind()
     }
@@ -54,7 +56,8 @@ class SearchRepositoryViewController: UIViewController {
     private func bind() {
         viewModel.$repositories
             .sink { [weak self] in
-                self?.reloadRepositoryTableView($0)
+                self?.repositories = $0
+                self?.repositoryTableView.reloadData()
             }
             .store(in: &cancellables)
 
@@ -69,10 +72,6 @@ class SearchRepositoryViewController: UIViewController {
                 self?.toggleItemHidden(by: $0)
             }
             .store(in: &cancellables)
-    }
-
-    private func reloadRepositoryTableView(_ repositories: [Repository]) {
-        self.repositoryTableView.reloadData()
     }
 
     private func showAlert(title: String, message: String) {
@@ -90,7 +89,7 @@ class SearchRepositoryViewController: UIViewController {
 
 extension SearchRepositoryViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.repositories.count
+        return repositories.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -99,7 +98,7 @@ extension SearchRepositoryViewController: UITableViewDataSource {
             for: indexPath
         ) as! RepositoryTableViewCell
 
-        let repository = viewModel.repositories[indexPath.row]
+        let repository = repositories[indexPath.row]
         cell.configureWith(repository: repository)
 
         return cell

@@ -16,10 +16,11 @@ class SearchRepositoryViewModel {
     @Published var repositories = [Repository]()
     @Published var isLoading = false
 
+    private var model: SearchRepositoryModelable
     private var searchText = ""
 
-    init() {
-
+    init(model: SearchRepositoryModelable) {
+        self.model = model
     }
 }
 
@@ -29,21 +30,20 @@ extension SearchRepositoryViewModel {
     }
 
     func onSearchButtonTapped() async {
-//        if isLoading {
-//            return
-//        }
-//
-//        isLoading = true
-//        defer {
-//            isLoading = false
-//        }
-//
-//        do {
-//            let repositories = try await model.fetchRepositries(keyword: searchText)
-//            self.repositories = repositories
-//        } catch {
-//            errorMessage = error.localizedDescription
-//        }
+        if isLoading {
+            return
+        }
 
+        isLoading = true
+        defer {
+            isLoading = false
+        }
+
+        do {
+            let repositories = try await model.fetchRepositries(keyword: searchText)
+            self.repositories = repositories
+        } catch {
+            errorMessage = error.localizedDescription
+        }
     }
 }
