@@ -13,8 +13,6 @@
 		FB221DA5298635FB00B5F63D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB221DA4298635FB00B5F63D /* Assets.xcassets */; };
 		FB221DA8298635FB00B5F63D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB221DA6298635FB00B5F63D /* LaunchScreen.storyboard */; };
 		FB221DB3298635FB00B5F63D /* ConcurrencyMVVMSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221DB2298635FB00B5F63D /* ConcurrencyMVVMSampleTests.swift */; };
-		FB221DBD298635FB00B5F63D /* ConcurrencyMVVMSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221DBC298635FB00B5F63D /* ConcurrencyMVVMSampleUITests.swift */; };
-		FB221DBF298635FB00B5F63D /* ConcurrencyMVVMSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221DBE298635FB00B5F63D /* ConcurrencyMVVMSampleUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +43,6 @@
 		FB221DAE298635FB00B5F63D /* ConcurrencyMVVMSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcurrencyMVVMSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB221DB2298635FB00B5F63D /* ConcurrencyMVVMSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyMVVMSampleTests.swift; sourceTree = "<group>"; };
 		FB221DB8298635FB00B5F63D /* ConcurrencyMVVMSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcurrencyMVVMSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB221DBC298635FB00B5F63D /* ConcurrencyMVVMSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyMVVMSampleUITests.swift; sourceTree = "<group>"; };
-		FB221DBE298635FB00B5F63D /* ConcurrencyMVVMSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyMVVMSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +75,6 @@
 			children = (
 				FB221D9A298635F600B5F63D /* ConcurrencyMVVMSample */,
 				FB221DB1298635FB00B5F63D /* ConcurrencyMVVMSampleTests */,
-				FB221DBB298635FB00B5F63D /* ConcurrencyMVVMSampleUITests */,
 				FB221D99298635F600B5F63D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,15 +111,6 @@
 				FB221DB2298635FB00B5F63D /* ConcurrencyMVVMSampleTests.swift */,
 			);
 			path = ConcurrencyMVVMSampleTests;
-			sourceTree = "<group>";
-		};
-		FB221DBB298635FB00B5F63D /* ConcurrencyMVVMSampleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FB221DBC298635FB00B5F63D /* ConcurrencyMVVMSampleUITests.swift */,
-				FB221DBE298635FB00B5F63D /* ConcurrencyMVVMSampleUITestsLaunchTests.swift */,
-			);
-			path = ConcurrencyMVVMSampleUITests;
 			sourceTree = "<group>";
 		};
 		FB221DCB2986376900B5F63D /* View */ = {
@@ -304,8 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB221DBF298635FB00B5F63D /* ConcurrencyMVVMSampleUITestsLaunchTests.swift in Sources */,
-				FB221DBD298635FB00B5F63D /* ConcurrencyMVVMSampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
