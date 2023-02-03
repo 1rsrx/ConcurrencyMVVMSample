@@ -9,24 +9,21 @@
 /* Begin PBXBuildFile section */
 		FB221D9C298635F600B5F63D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221D9B298635F600B5F63D /* AppDelegate.swift */; };
 		FB221D9E298635F600B5F63D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221D9D298635F600B5F63D /* SceneDelegate.swift */; };
-		FB221DA0298635F600B5F63D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221D9F298635F600B5F63D /* ViewController.swift */; };
-		FB221DA3298635F600B5F63D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB221DA1298635F600B5F63D /* Main.storyboard */; };
+		FB221DA0298635F600B5F63D /* SearchRepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221D9F298635F600B5F63D /* SearchRepositoryViewController.swift */; };
 		FB221DA5298635FB00B5F63D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB221DA4298635FB00B5F63D /* Assets.xcassets */; };
 		FB221DA8298635FB00B5F63D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB221DA6298635FB00B5F63D /* LaunchScreen.storyboard */; };
-		FB221DB3298635FB00B5F63D /* ConcurrencyMVVMSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221DB2298635FB00B5F63D /* ConcurrencyMVVMSampleTests.swift */; };
-		FB221DBD298635FB00B5F63D /* ConcurrencyMVVMSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221DBC298635FB00B5F63D /* ConcurrencyMVVMSampleUITests.swift */; };
-		FB221DBF298635FB00B5F63D /* ConcurrencyMVVMSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221DBE298635FB00B5F63D /* ConcurrencyMVVMSampleUITestsLaunchTests.swift */; };
+		FB221DB3298635FB00B5F63D /* SearchRepositoryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB221DB2298635FB00B5F63D /* SearchRepositoryViewModelTests.swift */; };
+		FBBBF05C298A82DA00015E7B /* SearchRepositoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBBBF05B298A82DA00015E7B /* SearchRepositoryView.xib */; };
+		FBBBF05E298B2B8D00015E7B /* SearchRepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBBF05D298B2B8D00015E7B /* SearchRepositoryViewModel.swift */; };
+		FBBBF061298B2BF400015E7B /* GitHubAPIGetRepositoriesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBBF060298B2BF400015E7B /* GitHubAPIGetRepositoriesResult.swift */; };
+		FBBBF064298B2CC500015E7B /* RepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBBBF063298B2CC500015E7B /* RepositoryTableViewCell.xib */; };
+		FBBBF067298B2D3C00015E7B /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBBF066298B2D3C00015E7B /* RepositoryTableViewCell.swift */; };
+		FBBBF069298B2F8A00015E7B /* SearchRepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBBF068298B2F8A00015E7B /* SearchRepositoryModel.swift */; };
+		FBBBF06C298B2FAD00015E7B /* GitHubAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBBF06B298B2FAC00015E7B /* GitHubAPIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		FB221DAF298635FB00B5F63D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FB221D90298635F500B5F63D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FB221D97298635F600B5F63D;
-			remoteInfo = ConcurrencyMVVMSample;
-		};
-		FB221DB9298635FB00B5F63D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FB221D90298635F500B5F63D /* Project object */;
 			proxyType = 1;
@@ -39,16 +36,19 @@
 		FB221D98298635F600B5F63D /* ConcurrencyMVVMSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcurrencyMVVMSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB221D9B298635F600B5F63D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB221D9D298635F600B5F63D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FB221D9F298635F600B5F63D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FB221DA2298635F600B5F63D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB221D9F298635F600B5F63D /* SearchRepositoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryViewController.swift; sourceTree = "<group>"; };
 		FB221DA4298635FB00B5F63D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB221DA7298635FB00B5F63D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB221DA9298635FB00B5F63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB221DAE298635FB00B5F63D /* ConcurrencyMVVMSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcurrencyMVVMSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB221DB2298635FB00B5F63D /* ConcurrencyMVVMSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyMVVMSampleTests.swift; sourceTree = "<group>"; };
-		FB221DB8298635FB00B5F63D /* ConcurrencyMVVMSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcurrencyMVVMSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB221DBC298635FB00B5F63D /* ConcurrencyMVVMSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyMVVMSampleUITests.swift; sourceTree = "<group>"; };
-		FB221DBE298635FB00B5F63D /* ConcurrencyMVVMSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyMVVMSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FB221DB2298635FB00B5F63D /* SearchRepositoryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryViewModelTests.swift; sourceTree = "<group>"; };
+		FBBBF05B298A82DA00015E7B /* SearchRepositoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchRepositoryView.xib; sourceTree = "<group>"; };
+		FBBBF05D298B2B8D00015E7B /* SearchRepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryViewModel.swift; sourceTree = "<group>"; };
+		FBBBF060298B2BF400015E7B /* GitHubAPIGetRepositoriesResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPIGetRepositoriesResult.swift; sourceTree = "<group>"; };
+		FBBBF063298B2CC500015E7B /* RepositoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryTableViewCell.xib; sourceTree = "<group>"; };
+		FBBBF066298B2D3C00015E7B /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		FBBBF068298B2F8A00015E7B /* SearchRepositoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryModel.swift; sourceTree = "<group>"; };
+		FBBBF06B298B2FAC00015E7B /* GitHubAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +66,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB221DB5298635FB00B5F63D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +74,6 @@
 			children = (
 				FB221D9A298635F600B5F63D /* ConcurrencyMVVMSample */,
 				FB221DB1298635FB00B5F63D /* ConcurrencyMVVMSampleTests */,
-				FB221DBB298635FB00B5F63D /* ConcurrencyMVVMSampleUITests */,
 				FB221D99298635F600B5F63D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +83,6 @@
 			children = (
 				FB221D98298635F600B5F63D /* ConcurrencyMVVMSample.app */,
 				FB221DAE298635FB00B5F63D /* ConcurrencyMVVMSampleTests.xctest */,
-				FB221DB8298635FB00B5F63D /* ConcurrencyMVVMSampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,8 +92,10 @@
 			children = (
 				FB221D9B298635F600B5F63D /* AppDelegate.swift */,
 				FB221D9D298635F600B5F63D /* SceneDelegate.swift */,
-				FB221D9F298635F600B5F63D /* ViewController.swift */,
-				FB221DA1298635F600B5F63D /* Main.storyboard */,
+				FB221DCE2986377900B5F63D /* Entity */,
+				FB221DCD2986377300B5F63D /* Model */,
+				FB221DCC2986376D00B5F63D /* ViewModel */,
+				FB221DCB2986376900B5F63D /* View */,
 				FB221DA4298635FB00B5F63D /* Assets.xcassets */,
 				FB221DA6298635FB00B5F63D /* LaunchScreen.storyboard */,
 				FB221DA9298635FB00B5F63D /* Info.plist */,
@@ -113,18 +106,85 @@
 		FB221DB1298635FB00B5F63D /* ConcurrencyMVVMSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				FB221DB2298635FB00B5F63D /* ConcurrencyMVVMSampleTests.swift */,
+				FB221DB2298635FB00B5F63D /* SearchRepositoryViewModelTests.swift */,
 			);
 			path = ConcurrencyMVVMSampleTests;
 			sourceTree = "<group>";
 		};
-		FB221DBB298635FB00B5F63D /* ConcurrencyMVVMSampleUITests */ = {
+		FB221DCB2986376900B5F63D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FB221DBC298635FB00B5F63D /* ConcurrencyMVVMSampleUITests.swift */,
-				FB221DBE298635FB00B5F63D /* ConcurrencyMVVMSampleUITestsLaunchTests.swift */,
+				FBBBF062298B2CA700015E7B /* Components */,
+				FBBBF05A298A82BD00015E7B /* SearchRepositoryView */,
 			);
-			path = ConcurrencyMVVMSampleUITests;
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB221DCC2986376D00B5F63D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FBBBF05D298B2B8D00015E7B /* SearchRepositoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FB221DCD2986377300B5F63D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBBBF068298B2F8A00015E7B /* SearchRepositoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB221DCE2986377900B5F63D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FBBBF06A298B2FA300015E7B /* Error */,
+				FBBBF05F298B2BE200015E7B /* API */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FBBBF05A298A82BD00015E7B /* SearchRepositoryView */ = {
+			isa = PBXGroup;
+			children = (
+				FBBBF05B298A82DA00015E7B /* SearchRepositoryView.xib */,
+				FB221D9F298635F600B5F63D /* SearchRepositoryViewController.swift */,
+			);
+			path = SearchRepositoryView;
+			sourceTree = "<group>";
+		};
+		FBBBF05F298B2BE200015E7B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FBBBF060298B2BF400015E7B /* GitHubAPIGetRepositoriesResult.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FBBBF062298B2CA700015E7B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FBBBF065298B2D2400015E7B /* RepositoryTableViewCell */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FBBBF065298B2D2400015E7B /* RepositoryTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FBBBF063298B2CC500015E7B /* RepositoryTableViewCell.xib */,
+				FBBBF066298B2D3C00015E7B /* RepositoryTableViewCell.swift */,
+			);
+			path = RepositoryTableViewCell;
+			sourceTree = "<group>";
+		};
+		FBBBF06A298B2FA300015E7B /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				FBBBF06B298B2FAC00015E7B /* GitHubAPIError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +225,6 @@
 			productReference = FB221DAE298635FB00B5F63D /* ConcurrencyMVVMSampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FB221DB7298635FB00B5F63D /* ConcurrencyMVVMSampleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FB221DC8298635FB00B5F63D /* Build configuration list for PBXNativeTarget "ConcurrencyMVVMSampleUITests" */;
-			buildPhases = (
-				FB221DB4298635FB00B5F63D /* Sources */,
-				FB221DB5298635FB00B5F63D /* Frameworks */,
-				FB221DB6298635FB00B5F63D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FB221DBA298635FB00B5F63D /* PBXTargetDependency */,
-			);
-			name = ConcurrencyMVVMSampleUITests;
-			productName = ConcurrencyMVVMSampleUITests;
-			productReference = FB221DB8298635FB00B5F63D /* ConcurrencyMVVMSampleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +239,6 @@
 						CreatedOnToolsVersion = 14.1;
 					};
 					FB221DAD298635FB00B5F63D = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = FB221D97298635F600B5F63D;
-					};
-					FB221DB7298635FB00B5F63D = {
 						CreatedOnToolsVersion = 14.1;
 						TestTargetID = FB221D97298635F600B5F63D;
 					};
@@ -221,7 +259,6 @@
 			targets = (
 				FB221D97298635F600B5F63D /* ConcurrencyMVVMSample */,
 				FB221DAD298635FB00B5F63D /* ConcurrencyMVVMSampleTests */,
-				FB221DB7298635FB00B5F63D /* ConcurrencyMVVMSampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,19 +269,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB221DA8298635FB00B5F63D /* LaunchScreen.storyboard in Resources */,
+				FBBBF05C298A82DA00015E7B /* SearchRepositoryView.xib in Resources */,
 				FB221DA5298635FB00B5F63D /* Assets.xcassets in Resources */,
-				FB221DA3298635F600B5F63D /* Main.storyboard in Resources */,
+				FBBBF064298B2CC500015E7B /* RepositoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FB221DAC298635FB00B5F63D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB221DB6298635FB00B5F63D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,9 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB221DA0298635F600B5F63D /* ViewController.swift in Sources */,
+				FBBBF05E298B2B8D00015E7B /* SearchRepositoryViewModel.swift in Sources */,
+				FB221DA0298635F600B5F63D /* SearchRepositoryViewController.swift in Sources */,
 				FB221D9C298635F600B5F63D /* AppDelegate.swift in Sources */,
+				FBBBF069298B2F8A00015E7B /* SearchRepositoryModel.swift in Sources */,
+				FBBBF067298B2D3C00015E7B /* RepositoryTableViewCell.swift in Sources */,
 				FB221D9E298635F600B5F63D /* SceneDelegate.swift in Sources */,
+				FBBBF06C298B2FAD00015E7B /* GitHubAPIError.swift in Sources */,
+				FBBBF061298B2BF400015E7B /* GitHubAPIGetRepositoriesResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,16 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB221DB3298635FB00B5F63D /* ConcurrencyMVVMSampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB221DB4298635FB00B5F63D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FB221DBF298635FB00B5F63D /* ConcurrencyMVVMSampleUITestsLaunchTests.swift in Sources */,
-				FB221DBD298635FB00B5F63D /* ConcurrencyMVVMSampleUITests.swift in Sources */,
+				FB221DB3298635FB00B5F63D /* SearchRepositoryViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,22 +316,9 @@
 			target = FB221D97298635F600B5F63D /* ConcurrencyMVVMSample */;
 			targetProxy = FB221DAF298635FB00B5F63D /* PBXContainerItemProxy */;
 		};
-		FB221DBA298635FB00B5F63D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FB221D97298635F600B5F63D /* ConcurrencyMVVMSample */;
-			targetProxy = FB221DB9298635FB00B5F63D /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FB221DA1298635F600B5F63D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB221DA2298635F600B5F63D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FB221DA6298635FB00B5F63D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,9 +456,9 @@
 				INFOPLIST_FILE = ConcurrencyMVVMSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,9 +484,9 @@
 				INFOPLIST_FILE = ConcurrencyMVVMSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -495,7 +509,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KT557Q945S;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuroda.ConcurrencyMVVMSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -515,7 +529,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KT557Q945S;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuroda.ConcurrencyMVVMSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -523,42 +537,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConcurrencyMVVMSample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ConcurrencyMVVMSample";
-			};
-			name = Release;
-		};
-		FB221DC9298635FB00B5F63D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KT557Q945S;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kuroda.ConcurrencyMVVMSampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ConcurrencyMVVMSample;
-			};
-			name = Debug;
-		};
-		FB221DCA298635FB00B5F63D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KT557Q945S;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kuroda.ConcurrencyMVVMSampleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ConcurrencyMVVMSample;
 			};
 			name = Release;
 		};
@@ -588,15 +566,6 @@
 			buildConfigurations = (
 				FB221DC6298635FB00B5F63D /* Debug */,
 				FB221DC7298635FB00B5F63D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FB221DC8298635FB00B5F63D /* Build configuration list for PBXNativeTarget "ConcurrencyMVVMSampleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FB221DC9298635FB00B5F63D /* Debug */,
-				FB221DCA298635FB00B5F63D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

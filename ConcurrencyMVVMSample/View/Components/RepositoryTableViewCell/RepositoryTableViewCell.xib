@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="142" id="baV-tQ-eCG" customClass="RepositoryTableViewCell" customModule="ConcurrencyMVVMSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="478" height="142"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="baV-tQ-eCG" id="aJh-dZ-m3M">
+                <rect key="frame" x="0.0" y="0.0" width="478" height="142"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repository Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hk-A1-epX">
+                        <rect key="frame" x="10" y="10" width="458" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BbS-M2-SZA">
+                        <rect key="frame" x="10" y="41" width="458" height="91"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1hk-A1-epX" firstAttribute="leading" secondItem="aJh-dZ-m3M" secondAttribute="leading" constant="10" id="Czj-J2-UwN"/>
+                    <constraint firstItem="BbS-M2-SZA" firstAttribute="top" secondItem="1hk-A1-epX" secondAttribute="bottom" constant="10" id="Om9-Tp-5QX"/>
+                    <constraint firstAttribute="trailing" secondItem="BbS-M2-SZA" secondAttribute="trailing" constant="10" id="cwW-os-ev3"/>
+                    <constraint firstItem="1hk-A1-epX" firstAttribute="top" secondItem="aJh-dZ-m3M" secondAttribute="top" constant="10" id="dFm-58-4X7"/>
+                    <constraint firstAttribute="bottom" secondItem="BbS-M2-SZA" secondAttribute="bottom" constant="10" id="kh8-iK-wZe"/>
+                    <constraint firstAttribute="trailing" secondItem="1hk-A1-epX" secondAttribute="trailing" constant="10" id="qBy-cj-QLt"/>
+                    <constraint firstItem="BbS-M2-SZA" firstAttribute="leading" secondItem="aJh-dZ-m3M" secondAttribute="leading" constant="10" id="sfv-RM-o6v"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionTextView" destination="BbS-M2-SZA" id="LpR-c3-D0N"/>
+                <outlet property="repositoryNameLabel" destination="1hk-A1-epX" id="uhc-bQ-bbA"/>
+            </connections>
+            <point key="canvasLocation" x="430.53435114503816" y="-42.95774647887324"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
